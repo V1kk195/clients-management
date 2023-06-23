@@ -1,31 +1,118 @@
 {
-    "clients": [
+  "clients": [
+    {
+      "id": 1,
+      "name": "Voonte",
+      "reports": [
         {
-            "id": 1,
-            "name": "Voonte",
-            "reports": [
-                { "id": 1, "title": 1, "data": [{}] },
-                { "id": 2, "title": 2, "data": [{}] },
-                { "id": 3, "title": 3, "data": [{}, {}] },
-                { "id": 4, "title": 4, "data": [] }
-            ]
+          "id": 1,
+          "title": 1,
+          "data": [
+            {}
+          ]
         },
         {
-            "id": 2,
-            "name": "Flashdog",
-            "reports": [
-                { "id": 6, "title": 6, "data": [{}] },
-                { "id": 7, "title": 7, "data": [{}] }
-            ]
+          "id": 2,
+          "title": 2,
+          "data": [
+            {}
+          ]
         },
-        { "id": 3, "name": "Wordware", "reports": [] },
         {
-            "id": 4,
-            "name": "Camido",
-            "reports": [
-                { "id": 8, "title": 8, "data": [{}] },
-                { "id": 9, "title": 9, "data": [{}] }
-            ]
+          "id": 3,
+          "title": 3,
+          "data": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": 4,
+          "title": 4,
+          "data": []
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Flashdog",
+      "reports": [
+        {
+          "id": 6,
+          "title": 6,
+          "data": [
+            {}
+          ]
+        },
+        {
+          "id": 7,
+          "title": 7,
+          "data": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Wordware",
+      "reports": []
+    },
+    {
+      "id": 4,
+      "name": "Camido",
+      "reports": [
+        {
+          "id": 8,
+          "title": 8,
+          "data": [
+            {}
+          ]
+        },
+        {
+          "id": 9,
+          "title": 9,
+          "data": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Apple"
+    },
+    {
+      "id": 0.6017065216232969,
+      "name": "Apple"
+    },
+    {
+      "id": 0.670355453366444,
+      "name": "Apple"
+    },
+    {
+      "id": 0.6740457051423259,
+      "name": "Apple"
+    },
+    {
+      "id": 0.8430814025804605,
+      "name": "Apple"
+    },
+    {
+      "id": 0.6859379339349401,
+      "name": "Samsung"
+    },
+    {
+      "id": 0.9318389567309362,
+      "name": "Samsung"
+    },
+    {
+      "id": 0.792201330666338,
+      "name": "Samsung"
+    },
+    {
+      "id": 0.37390473799756796,
+      "name": "Samsung"
+    }
+  ]
 }

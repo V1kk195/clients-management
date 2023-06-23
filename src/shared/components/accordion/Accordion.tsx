@@ -9,6 +9,7 @@ type Props<T> = {
     buttons?: ReactNode;
     renderBody: (item: T) => ReactNode;
     id: string;
+    classname?: string;
 };
 
 export const Accordion = <T extends { id: string | number }>({
@@ -17,10 +18,14 @@ export const Accordion = <T extends { id: string | number }>({
     renderBody,
     getHeading,
     id,
+    classname,
 }: Props<T>) => {
     return (
-        <div className={cx('accordion', styles.appAccordion)} id={id}>
-            {list.map((item) => {
+        <div
+            className={cx('accordion', styles.appAccordion, classname)}
+            id={id}
+        >
+            {list?.map((item) => {
                 const accordionId = `${id}${item.id}`;
 
                 return (
