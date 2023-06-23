@@ -1,0 +1,7 @@
+.appAccordion {
+    :global(.accordion-button) {
+        &:after {
+            margin-left: 0;
+        }
+    }
+}
