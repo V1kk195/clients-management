@@ -1,0 +1,31 @@
+{
+    "clients": [
+        {
+            "id": 1,
+            "name": "Voonte",
+            "reports": [
+                { "id": 1, "title": 1, "data": [{}] },
+                { "id": 2, "title": 2, "data": [{}] },
+                { "id": 3, "title": 3, "data": [{}, {}] },
+                { "id": 4, "title": 4, "data": [] }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Flashdog",
+            "reports": [
+                { "id": 6, "title": 6, "data": [{}] },
+                { "id": 7, "title": 7, "data": [{}] }
+            ]
+        },
+        { "id": 3, "name": "Wordware", "reports": [] },
+        {
+            "id": 4,
+            "name": "Camido",
+            "reports": [
+                { "id": 8, "title": 8, "data": [{}] },
+                { "id": 9, "title": 9, "data": [{}] }
+            ]
+        }
+    ]
+}
