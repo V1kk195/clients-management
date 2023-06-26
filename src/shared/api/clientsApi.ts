@@ -2,9 +2,11 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 import { Client } from '../types';
 
+const baseUrl = 'http://localhost:3004';
+
 export const clientsApi = createApi({
     reducerPath: 'clientsApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3004\n' }),
+    baseQuery: fetchBaseQuery({ baseUrl }),
     tagTypes: ['Clients'],
     endpoints: (builder) => ({
         getClients: builder.query<Client[], void>({
