@@ -1,6 +1,10 @@
-import { VerticalBar } from '../../shared/components/charts';
+import { VerticalBar, PieChart } from '../../shared/components';
+import { ReportData } from '../../shared/types';
 
-export const ReportCard = ({ data }) => {
+type Props = {
+    data: ReportData[];
+};
+export const ReportCard = ({ data }: Props) => {
     return (
         <div>
             {data.map((item) => {
@@ -9,6 +13,8 @@ export const ReportCard = ({ data }) => {
                         {item.type === 'expenses' ? (
                             <VerticalBar data={item} />
                         ) : null}
+
+                        {item.type === 'ads' ? <PieChart data={item} /> : null}
                     </div>
                 );
             })}

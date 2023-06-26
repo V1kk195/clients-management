@@ -8,13 +8,16 @@ import {
     Title,
     Tooltip,
     Legend,
+    ChartData,
+    ChartOptions,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
-import { ExpensesData } from '../../../types';
+import { ReportData } from '../../../types';
 
 type Props = {
-    data: ExpensesData;
+    data: ReportData & ChartData<'bar'>;
+    options?: ChartOptions<'bar'>;
 };
 
 ChartJS.register(
@@ -26,30 +29,30 @@ ChartJS.register(
     Legend
 );
 
-export const options = {
-    responsive: true,
-    plugins: {
-        legend: {
-            position: 'top' as const,
-        },
-        title: {
-            display: true,
-            text: 'Chart.js Bar Chart',
-        },
-    },
-};
-
 const colors = ['rgba(255, 99, 132, 0.5)', 'rgba(53, 162, 235, 0.5)'];
 
-export const VerticalBar = ({ data }: Props) => {
+export const VerticalBar = ({ data, options }: Props) => {
     const chartData = {
         labels: data.labels,
-        datasets: data.datasets.map(({ label, data }, index) => ({
-            label,
-            data,
+        datasets: data.datasets.map((item, index) => ({
             backgroundColor: colors[index || 0],
+            ...item,
         })),
     };
 
-    return <Bar options={options} data={chartData} />;
+    const chartOptions = {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top' as const,
+            },
+            title: {
+                display: true,
+                text: data.title,
+            },
+        },
+        ...options,
+    };
+
+    return <Bar options={chartOptions} data={chartData} />;
 };

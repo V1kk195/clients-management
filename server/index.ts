@@ -33,6 +33,31 @@ const generateSalesExpensesData = () => {
     return {
         id: faker.string.uuid(),
         type: 'expenses',
+        title: 'Sales and Expenses',
+        labels,
+        datasets,
+    };
+};
+
+const generateAdsData = () => {
+    const labels: string[] = [
+        'Direct',
+        'Referral',
+        'Organic Search',
+        'Social Media',
+        'Paid Advertising',
+    ];
+    const datasets = [
+        {
+            label: 'Customer Acquisition',
+            data: [25, 15, 30, 10, 20],
+        },
+    ];
+
+    return {
+        id: faker.string.uuid(),
+        type: 'ads',
+        title: 'Customers Traffic',
         labels,
         datasets,
     };
@@ -42,7 +67,7 @@ const generateReport = () => {
     return {
         id: faker.string.uuid(),
         title: faker.lorem.words(3),
-        data: [generateSalesExpensesData()],
+        data: [generateSalesExpensesData(), generateAdsData()],
     };
 };
 
