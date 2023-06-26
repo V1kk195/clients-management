@@ -5,11 +5,44 @@ const cors = require('cors');
 
 const dbPath = 'server/db.json';
 
+const generateSalesExpensesData = () => {
+    const labels: string[] = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+    ];
+    const datasets = [
+        {
+            label: `Sales`,
+            data: Array.from({ length: labels.length }, () =>
+                faker.number.int({ min: 0, max: 1000 })
+            ),
+        },
+        {
+            label: `Expenses`,
+            data: Array.from({ length: labels.length }, () =>
+                faker.number.int({ min: 0, max: 1000 })
+            ),
+        },
+    ];
+
+    return {
+        id: faker.string.uuid(),
+        type: 'expenses',
+        labels,
+        datasets,
+    };
+};
+
 const generateReport = () => {
     return {
         id: faker.string.uuid(),
         title: faker.lorem.words(3),
-        data: [],
+        data: [generateSalesExpensesData()],
     };
 };
 

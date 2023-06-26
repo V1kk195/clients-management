@@ -9,3 +9,10 @@ export type Report = {
     title: string;
     data: any[];
 };
+
+export type ExpensesData = {
+    id: string;
+    type: 'expenses';
+    labels: string[];
+    datasets: { label: string; data: number[] }[];
+};
