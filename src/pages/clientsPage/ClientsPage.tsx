@@ -22,7 +22,7 @@ export const ClientsPage = () => {
     }
 
     if (error) {
-        content = 'Something went wrong';
+        content = 'Something went wrong. Please, reload the page';
     }
 
     if (data) {

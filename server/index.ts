@@ -127,6 +127,8 @@ fs.writeFileSync(dbPath, JSON.stringify(data));
 const server = jsonServer.create();
 const router = jsonServer.router(dbPath);
 
+const getClients = () => router.db.get('clients');
+
 server.use(
     cors({
         origin: true,
@@ -140,7 +142,7 @@ const middlewares = jsonServer.defaults({ noCors: true });
 
 server.get('/clients', (req, res) => {
     const queries = req.query;
-    const clients = router.db.get('clients').value();
+    const clients = getClients().value();
 
     const filteredClients = filterByQueries(clients, queries);
 
@@ -149,13 +151,13 @@ server.get('/clients', (req, res) => {
 
 server.post('/clients', (req, res) => {
     const newClient = generateNewClient();
-    router.db.get('clients').push(newClient).write();
+    getClients().push(newClient).write();
     res.json(newClient);
 });
 
 server.post('/clients/:id/add_report', (req, res) => {
     const clientId = req.params.id;
-    const client = router.db.get('clients').find({ id: clientId }).value();
+    const client = getClients().find({ id: clientId }).value();
     const report = generateReport();
 
     if (client) {
@@ -164,6 +166,56 @@ server.post('/clients/:id/add_report', (req, res) => {
         res.status(201).json(report);
     } else {
         res.status(404).json({ error: 'Client not found' });
+    }
+});
+
+const getClientIndex = (reportId: string) => {
+    return getClients()
+        .value()
+        .findIndex((client) =>
+            client.reports.some((report) => report.id === reportId)
+        );
+};
+const findClientAndReportIndex = (reportId: string) => {
+    const clientIndex = getClientIndex(reportId);
+
+    if (clientIndex !== -1) {
+        const reportIndex = router.db
+            .get(`clients[${clientIndex}].reports`)
+            .value()
+            .findIndex((report) => report.id === reportId);
+
+        if (reportIndex !== -1) {
+            return {
+                clientIndex,
+                reportIndex,
+            };
+        }
+    }
+
+    return null;
+};
+
+function addDataToReport(clientIndex, reportIndex, data) {
+    router.db
+        .get(`clients[${clientIndex}].reports[${reportIndex}].data`)
+        .push(data)
+        .write();
+}
+
+server.post('/reports/:id/add_data', (req, res) => {
+    const reportId = req.params.id;
+    const data = [generateSalesExpensesData, generateAdsData][
+        Math.round(Math.random())
+    ]();
+
+    const indexes = findClientAndReportIndex(reportId);
+
+    if (indexes) {
+        addDataToReport(indexes.clientIndex, indexes.reportIndex, data);
+        res.status(201).json(data);
+    } else {
+        res.status(404).json({ error: 'Report not found' });
     }
 });
 

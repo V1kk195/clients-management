@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { Client, Report } from '../types';
+import { Client, Report, ReportData } from '../types';
 
 const baseUrl = 'http://localhost:3004';
 
@@ -39,6 +39,13 @@ export const clientsApi = createApi({
             }),
             invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
         }),
+        addDataToReport: builder.mutation<ReportData, string>({
+            query: (reportId: string) => ({
+                url: `reports/${reportId}/add_data`,
+                method: 'POST',
+            }),
+            invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
+        }),
     }),
 });
 
@@ -46,4 +53,5 @@ export const {
     useGetClientsQuery,
     useAddClientMutation,
     useAddReportToClientMutation,
+    useAddDataToReportMutation,
 } = clientsApi;
