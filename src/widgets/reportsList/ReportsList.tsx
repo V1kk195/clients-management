@@ -25,7 +25,7 @@ export const ReportsList = ({ reports, clientId }: Props) => {
                 <AddNewData reportId={item.id} />
             </div>
 
-            <ReportCard data={item.data} />
+            <ReportCard data={item.data} reportId={item.id} />
         </div>
     );
 

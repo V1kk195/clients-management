@@ -67,6 +67,18 @@ export const clientsApi = createApi({
             }),
             invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
         }),
+        deleteData: builder.mutation<
+            void,
+            { reportId: string; dataId: string }
+        >({
+            query: ({ reportId, dataId }) => {
+                return {
+                    url: `reports/${reportId}/data/${dataId}`,
+                    method: 'DELETE',
+                };
+            },
+            invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
+        }),
     }),
 });
 
@@ -77,4 +89,5 @@ export const {
     useAddDataToReportMutation,
     useDeleteClientMutation,
     useDeleteReportMutation,
+    useDeleteDataMutation,
 } = clientsApi;

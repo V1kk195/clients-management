@@ -1,15 +1,15 @@
 {
   "clients": [
     {
-      "id": "51054ad5-ace9-4029-8ba8-1c4c55c9e75d",
-      "name": "Cole Group",
+      "id": "ff8131dc-a90b-4291-b6d1-57a113a0ab62",
+      "name": "Barrows - Bashirian",
       "reports": [
         {
-          "id": "1d81d51a-6e34-4332-9643-1055dec8a9fc",
-          "title": "magnam cumque cumque",
+          "id": "0421571e-bd76-4ec6-bf16-c515e8467e9a",
+          "title": "sapiente praesentium aut",
           "data": [
             {
-              "id": "796a4a0d-69da-465a-bfc0-129cdaa67f4b",
+              "id": "6b561592-71c3-4553-a8c8-2caf4f02d692",
               "type": "expenses",
               "title": "Sales and Expenses",
               "labels": [
@@ -25,31 +25,603 @@
                 {
                   "label": "Sales",
                   "data": [
-                    730,
-                    507,
-                    738,
-                    811,
-                    735,
-                    724,
-                    842
+                    300,
+                    619,
+                    414,
+                    296,
+                    630,
+                    157,
+                    215
                   ]
                 },
                 {
                   "label": "Expenses",
                   "data": [
-                    809,
                     797,
-                    278,
-                    422,
+                    573,
+                    240,
+                    479,
+                    1,
+                    410,
+                    808
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9a6f0b17-7795-402e-899b-169b96cf63c9",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2ace4aff-ddbd-4ee6-8a45-f5babf1f9696",
+      "name": "Zulauf Group",
+      "reports": [
+        {
+          "id": "fd280576-5c23-447e-bdc7-352056977950",
+          "title": "temporibus ex mollitia",
+          "data": [
+            {
+              "id": "23745620-f053-4953-9873-92ebc74d471a",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    816,
+                    702,
+                    234,
+                    415,
+                    558,
+                    868,
+                    883
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    298,
+                    417,
+                    605,
+                    271,
+                    444,
+                    574,
+                    934
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9a1d1941-5c7c-4a0a-b4d9-a201cd5e474b",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7a44e164-6411-4c70-a19f-dd2761284b2f",
+          "title": "error tempore ratione",
+          "data": [
+            {
+              "id": "7b4f9fe7-577a-45dc-817f-8ee236104ef5",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    596,
+                    447,
+                    182,
+                    243,
+                    467,
+                    280,
+                    352
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    388,
+                    534,
+                    739,
+                    90,
+                    185,
+                    629,
+                    45
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "045fc162-627c-42dc-a3d2-1500359391e3",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aae458d9-8540-471d-9993-19019ae72314",
+          "title": "rem aspernatur aut",
+          "data": [
+            {
+              "id": "2f69706a-6c1d-43c3-8b52-ae234a035931",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    468,
+                    950,
+                    375,
+                    259,
+                    974,
+                    152,
+                    761
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    451,
+                    174,
+                    300,
+                    406,
+                    714,
+                    810,
+                    695
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e43f941b-d8e6-4337-9bc0-3e3bb4ade8d3",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "055fc40f-5cd7-4a1c-a4f2-13efda0df922",
+          "title": "rerum ex iste",
+          "data": [
+            {
+              "id": "4f472720-3e07-41fb-8fff-9e87ab44177b",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    144,
+                    516,
+                    200,
+                    846,
+                    996,
+                    454,
+                    44
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    64,
+                    854,
+                    391,
+                    664,
+                    213,
+                    757,
+                    651
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4f2d901b-bb8e-4d48-af4b-8fd9ce739c4d",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "636f18a9-7889-436b-870a-d66064606de1",
+          "title": "minus repudiandae nisi",
+          "data": [
+            {
+              "id": "f87250f2-76b7-4757-adf4-616cfddfc254",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    788,
+                    517,
+                    563,
+                    124,
+                    362,
+                    32,
+                    816
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    548,
+                    473,
+                    220,
+                    227,
+                    873,
+                    327,
+                    481
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c69ff1b3-7a2a-4af3-ae28-8c823dde8ffa",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6b6fecd-1959-45a7-a5ed-2d0b394b5e28",
+      "name": "Padberg Group",
+      "reports": [
+        {
+          "id": "272a39fb-72a5-441a-8b16-c164b02039c9",
+          "title": "unde incidunt officiis",
+          "data": [
+            {
+              "id": "0e9950f3-cf16-40c9-a8da-14c89855b650",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    459,
+                    668,
+                    877,
+                    774,
+                    701,
+                    598,
+                    444
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
                     418,
-                    523,
+                    145,
+                    70,
+                    45,
+                    903,
+                    387,
+                    213
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c9883836-c4a6-476e-8e68-1eaa2548463c",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5bdb9341-e845-4931-9766-12e8b62c9f5c",
+          "title": "dolor expedita aspernatur",
+          "data": [
+            {
+              "id": "a2cf56f5-5980-443f-82e0-de1f1fcca4a5",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    796,
+                    748,
+                    263,
+                    518,
+                    285,
+                    798,
+                    324
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    375,
+                    824,
+                    732,
+                    604,
+                    388,
+                    362,
+                    477
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "259c1e21-deae-4110-95ed-bec4dacb81ec",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ff3fec2b-4c9e-4502-af03-ae1622e221de",
+          "title": "error nisi dolorum",
+          "data": [
+            {
+              "id": "0eada5ca-1413-4b86-a7e9-5e35f8aeb5ff",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    965,
+                    422,
+                    293,
+                    906,
+                    251,
+                    570,
                     639
                   ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    625,
+                    649,
+                    618,
+                    147,
+                    21,
+                    274,
+                    847
+                  ]
                 }
               ]
             },
             {
-              "id": "ed0d7021-54f8-4e7a-b058-116aea45871d",
+              "id": "f864f9e9-501d-4d04-8f25-571b60722629",
               "type": "ads",
               "title": "Customers Traffic",
               "labels": [
@@ -73,19 +645,13 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "fa10fedb-faa4-4acc-9a4e-d77fca1e0517",
-      "name": "Klein LLC",
-      "reports": [
+        },
         {
-          "id": "92b27dd3-9cb9-4f0b-8dc1-6e006827b2a9",
-          "title": "saepe reprehenderit reprehenderit",
+          "id": "8b2e86d1-1166-44d7-abc0-a64775880c7a",
+          "title": "incidunt libero esse",
           "data": [
             {
-              "id": "c60c9e49-f8be-4c53-9b7b-87224863c7c0",
+              "id": "49a76a0c-114c-4b7f-953b-7f7f1804d4bd",
               "type": "expenses",
               "title": "Sales and Expenses",
               "labels": [
@@ -101,183 +667,31 @@
                 {
                   "label": "Sales",
                   "data": [
-                    151,
-                    691,
-                    91,
-                    673,
-                    564,
-                    478,
-                    780
-                  ]
-                },
-                {
-                  "label": "Expenses",
-                  "data": [
-                    797,
-                    425,
-                    73,
-                    329,
-                    270,
-                    70,
-                    329
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "260db48e-672c-406e-86c7-ecbcd0dbf316",
-              "type": "ads",
-              "title": "Customers Traffic",
-              "labels": [
-                "Direct",
-                "Referral",
-                "Organic Search",
-                "Social Media",
-                "Paid Advertising"
-              ],
-              "datasets": [
-                {
-                  "label": "Customer Acquisition",
-                  "data": [
-                    25,
-                    15,
-                    30,
-                    10,
-                    20
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "06f8a3e6-2ecf-4aaf-a61c-90167cc03ad1",
-      "name": "McClure, Corwin and Mills",
-      "reports": [
-        {
-          "id": "426ee0dc-35ec-4504-80c3-172205233414",
-          "title": "ducimus commodi soluta",
-          "data": [
-            {
-              "id": "5d36ae67-f79c-4d8c-8d7f-cd274ea03238",
-              "type": "expenses",
-              "title": "Sales and Expenses",
-              "labels": [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July"
-              ],
-              "datasets": [
-                {
-                  "label": "Sales",
-                  "data": [
-                    576,
-                    107,
-                    619,
-                    796,
-                    190,
-                    539,
-                    469
-                  ]
-                },
-                {
-                  "label": "Expenses",
-                  "data": [
-                    719,
-                    470,
-                    222,
-                    480,
-                    420,
-                    817,
-                    570
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "7ea4a8a5-7b40-48f2-9302-c980eac0a030",
-              "type": "ads",
-              "title": "Customers Traffic",
-              "labels": [
-                "Direct",
-                "Referral",
-                "Organic Search",
-                "Social Media",
-                "Paid Advertising"
-              ],
-              "datasets": [
-                {
-                  "label": "Customer Acquisition",
-                  "data": [
-                    25,
-                    15,
-                    30,
-                    10,
-                    20
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "464ad8b5-a38e-4adb-bc56-74b1aba1f60a",
-      "name": "Romaguera - Sauer",
-      "reports": [
-        {
-          "id": "12b8202d-278d-494d-90c1-ea329d3e29fb",
-          "title": "quaerat commodi tempora",
-          "data": [
-            {
-              "id": "3d60c27a-424b-4f8b-82eb-ae5513144d6d",
-              "type": "expenses",
-              "title": "Sales and Expenses",
-              "labels": [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July"
-              ],
-              "datasets": [
-                {
-                  "label": "Sales",
-                  "data": [
-                    817,
-                    988,
-                    616,
-                    774,
-                    589,
-                    579,
-                    617
-                  ]
-                },
-                {
-                  "label": "Expenses",
-                  "data": [
-                    690,
-                    100,
-                    205,
-                    427,
-                    566,
                     18,
-                    884
+                    829,
+                    463,
+                    559,
+                    295,
+                    184,
+                    480
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    248,
+                    697,
+                    838,
+                    79,
+                    765,
+                    988,
+                    342
                   ]
                 }
               ]
             },
             {
-              "id": "316db40b-8403-413b-ac51-d857431dcb93",
+              "id": "c12c260e-ae1a-40da-a9a8-8499a1c3ffaf",
               "type": "ads",
               "title": "Customers Traffic",
               "labels": [
@@ -303,11 +717,11 @@
           ]
         },
         {
-          "id": "a669512d-16f3-4cd0-88af-84128c199a7d",
-          "title": "minus officiis blanditiis",
+          "id": "fd09f4e6-4fca-43d4-85f6-85df43a4e3b3",
+          "title": "vel dolorem dolorem",
           "data": [
             {
-              "id": "f79b6528-f154-4d3a-89e1-547ebfb68c28",
+              "id": "93ed6291-5c66-43de-9543-58b1856b1e56",
               "type": "expenses",
               "title": "Sales and Expenses",
               "labels": [
@@ -323,31 +737,107 @@
                 {
                   "label": "Sales",
                   "data": [
-                    313,
-                    101,
-                    972,
-                    963,
-                    122,
-                    283,
-                    664
+                    520,
+                    128,
+                    604,
+                    17,
+                    941,
+                    481,
+                    755
                   ]
                 },
                 {
                   "label": "Expenses",
                   "data": [
-                    442,
-                    389,
-                    511,
-                    885,
-                    472,
+                    290,
+                    633,
+                    333,
+                    666,
+                    491,
+                    583,
+                    475
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f15480c0-ac8e-42fb-b406-54b70a36531b",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a75c8439-3b44-4e28-be82-ca5648df7134",
+      "name": "MacGyver - Brown",
+      "reports": [
+        {
+          "id": "419b74b9-6b9b-49de-a14e-2ebc35206b0d",
+          "title": "nobis cumque ipsum",
+          "data": [
+            {
+              "id": "aaaeed8e-b9e5-45db-8848-71a6c0aa0e4e",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    316,
+                    287,
+                    947,
+                    558,
+                    403,
+                    224,
+                    691
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    981,
+                    387,
+                    691,
+                    840,
                     698,
-                    604
+                    465,
+                    894
                   ]
                 }
               ]
             },
             {
-              "id": "35807d16-728d-46ee-a2e4-de215c5608d8",
+              "id": "cc047e85-ebb1-40a2-8ced-793434de29f6",
               "type": "ads",
               "title": "Customers Traffic",
               "labels": [
@@ -373,11 +863,11 @@
           ]
         },
         {
-          "id": "27e8c912-ee4c-4a9d-9d65-e70e9f223c6f",
-          "title": "excepturi amet aut",
+          "id": "83e49659-c566-497e-9c8c-63c0c6253e2f",
+          "title": "quam earum officiis",
           "data": [
             {
-              "id": "1f99685f-68c1-4a6f-9cb0-d34b32ea6973",
+              "id": "2d0d83bc-8e6c-464a-93a4-1d6c507f0088",
               "type": "expenses",
               "title": "Sales and Expenses",
               "labels": [
@@ -393,31 +883,31 @@
                 {
                   "label": "Sales",
                   "data": [
-                    861,
-                    239,
-                    539,
-                    860,
-                    116,
-                    900,
-                    62
+                    374,
+                    684,
+                    922,
+                    201,
+                    316,
+                    947,
+                    60
                   ]
                 },
                 {
                   "label": "Expenses",
                   "data": [
-                    607,
-                    372,
-                    713,
-                    556,
-                    414,
-                    803,
-                    769
+                    309,
+                    935,
+                    291,
+                    527,
+                    561,
+                    524,
+                    402
                   ]
                 }
               ]
             },
             {
-              "id": "11027f65-bee1-48b0-98dd-448d17b3a81c",
+              "id": "c9b03b22-4af0-4bb1-8594-6e5fdc37b884",
               "type": "ads",
               "title": "Customers Traffic",
               "labels": [
@@ -443,11 +933,11 @@
           ]
         },
         {
-          "id": "97f23904-5b67-40f9-8b73-5bbbc1d77f8d",
-          "title": "pariatur dolorum inventore",
+          "id": "8a5c9427-f67d-4a63-9964-46ced36e129c",
+          "title": "consequatur iure doloribus",
           "data": [
             {
-              "id": "abcfc90e-0290-42f3-8dcc-03cfd63bca4d",
+              "id": "0d4a2179-6eab-4dc0-9593-6f68fa7a5383",
               "type": "expenses",
               "title": "Sales and Expenses",
               "labels": [
@@ -463,31 +953,247 @@
                 {
                   "label": "Sales",
                   "data": [
-                    458,
-                    791,
+                    211,
+                    428,
+                    481,
+                    514,
+                    615,
+                    365,
+                    674
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    903,
+                    646,
+                    345,
+                    316,
+                    144,
+                    143,
+                    671
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5e76f71b-07f5-4fea-9b05-3207b2c71247",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d06eb3f2-1790-4448-83dd-adced4500bd1",
+      "name": "Lemke Inc",
+      "reports": [
+        {
+          "id": "753259a6-3d3d-484a-9cb8-823fe61e98fc",
+          "title": "incidunt quisquam nemo",
+          "data": [
+            {
+              "id": "70c9f63a-77dc-4e89-8c4c-cce694893917",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    303,
+                    89,
+                    172,
+                    787,
+                    658,
+                    71,
+                    455
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    950,
+                    761,
+                    598,
+                    624,
+                    242,
                     104,
-                    123,
-                    456,
-                    773,
-                    519
-                  ]
-                },
-                {
-                  "label": "Expenses",
-                  "data": [
-                    529,
-                    551,
-                    119,
-                    630,
-                    284,
-                    410,
-                    322
+                    676
                   ]
                 }
               ]
             },
             {
-              "id": "a7e19ff6-288c-4c13-835b-1ea8d4311490",
+              "id": "899bc92f-018e-482d-846e-1fc94de61bce",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "17a5aac6-ece4-48a1-9f9a-e9ae4321e925",
+          "title": "deleniti quis numquam",
+          "data": [
+            {
+              "id": "26ea53c0-baee-4a66-bdb7-d067a4cb644b",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    337,
+                    467,
+                    513,
+                    388,
+                    493,
+                    606,
+                    914
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    273,
+                    769,
+                    658,
+                    641,
+                    894,
+                    491,
+                    377
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "096f02b4-3cd3-4ff9-be9d-7497ed485149",
+              "type": "ads",
+              "title": "Customers Traffic",
+              "labels": [
+                "Direct",
+                "Referral",
+                "Organic Search",
+                "Social Media",
+                "Paid Advertising"
+              ],
+              "datasets": [
+                {
+                  "label": "Customer Acquisition",
+                  "data": [
+                    25,
+                    15,
+                    30,
+                    10,
+                    20
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7f6d70e1-653a-4a5c-a54f-4daac217a30d",
+          "title": "vel eveniet laborum",
+          "data": [
+            {
+              "id": "aa253d0d-c94c-4a49-8ae2-36714902661d",
+              "type": "expenses",
+              "title": "Sales and Expenses",
+              "labels": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              "datasets": [
+                {
+                  "label": "Sales",
+                  "data": [
+                    355,
+                    478,
+                    837,
+                    223,
+                    257,
+                    360,
+                    699
+                  ]
+                },
+                {
+                  "label": "Expenses",
+                  "data": [
+                    545,
+                    629,
+                    44,
+                    627,
+                    7,
+                    704,
+                    397
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "597376a3-8d50-41fb-83c9-ab5d78eac4c6",
               "type": "ads",
               "title": "Customers Traffic",
               "labels": [
