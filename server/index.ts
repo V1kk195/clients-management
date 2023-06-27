@@ -101,6 +101,23 @@ const generateClients = (count: number) => {
     return clients;
 };
 
+const filterByQueries = <T>(
+    array: T[],
+    queries: Record<string, string>
+): T[] => {
+    return array.filter((item) => {
+        let isValid = true;
+
+        for (let key in queries) {
+            isValid =
+                isValid &&
+                item[key].toLowerCase().includes(queries[key].toLowerCase());
+        }
+
+        return isValid;
+    });
+};
+
 const data = {
     clients: generateClients(5),
 };
@@ -122,8 +139,12 @@ server.options('*', cors());
 const middlewares = jsonServer.defaults({ noCors: true });
 
 server.get('/clients', (req, res) => {
+    const queries = req.query;
     const clients = router.db.get('clients').value();
-    res.json(clients);
+
+    const filteredClients = filterByQueries(clients, queries);
+
+    res.json(filteredClients);
 });
 
 server.post('/clients', (req, res) => {

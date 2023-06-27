@@ -1,5 +1,5 @@
-import { Button } from '../../shared/components/button';
-import { useAddClientMutation } from '../../shared/api/clientsApi';
+import { Button } from '../../shared/components';
+import { useAddClientMutation } from '../../shared/api';
 
 export const AddNewClient = () => {
     const [addClient, { isLoading }] = useAddClientMutation();

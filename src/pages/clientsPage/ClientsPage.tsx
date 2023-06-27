@@ -1,19 +1,43 @@
-import { ClientsList } from '../../widgets/clientsList';
-import { useGetClientsQuery } from '../../shared/api/clientsApi';
-import { ReportsList } from '../../widgets/reportsList';
-import { AddNewClient } from '../../features/addNewClient';
+import { ReactNode, useState } from 'react';
+import cx from 'classnames';
+
+import { ClientsList, ReportsList } from '../../widgets';
+import { AddNewClient, SearchClients } from '../../features';
+import { useGetClientsQuery } from '../../shared/api';
+import styles from './ClientsPage.module.scss';
 
 export const ClientsPage = () => {
-    const { data, error, isLoading } = useGetClientsQuery();
+    const [searchValue, setSearchValue] = useState('');
+
+    const { data, error, isLoading } = useGetClientsQuery(searchValue);
+
+    const handleSearch = (value: string): void => {
+        setSearchValue(value);
+    };
+
+    let content: ReactNode;
 
     if (isLoading) {
-        return <div className="container">Loading</div>;
+        content = 'Loading';
+    }
+
+    if (error) {
+        content = 'Something went wrong';
     }
 
     if (data) {
-        return (
-            <div className="container">
-                <AddNewClient />
+        content = (
+            <>
+                <div
+                    className={cx(
+                        'd-flex justify-content-between mb-3',
+                        styles.clientsPanel
+                    )}
+                >
+                    <AddNewClient />
+                    <SearchClients onSearch={handleSearch} />
+                </div>
+
                 <ClientsList
                     clients={data}
                     renderBody={(client) => (
@@ -23,9 +47,9 @@ export const ClientsPage = () => {
                         />
                     )}
                 />
-            </div>
+            </>
         );
     }
 
-    return <div className="container">No clients</div>;
+    return <div className="container py-5">{content}</div>;
 };

@@ -9,8 +9,9 @@ export const clientsApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl }),
     tagTypes: ['Clients'],
     endpoints: (builder) => ({
-        getClients: builder.query<Client[], void>({
-            query: () => `clients`,
+        getClients: builder.query<Client[], string | void>({
+            query: (value?: string) =>
+                `clients${value ? `?name=${value}` : ''}`,
             providesTags: (result) =>
                 result
                     ? [

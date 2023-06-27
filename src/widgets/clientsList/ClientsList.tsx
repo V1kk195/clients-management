@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Accordion } from '../../shared/components/accordion';
+import { Accordion } from '../../shared/components';
 import { Client } from '../../shared/types';
 
 type Props = {
@@ -9,6 +9,10 @@ type Props = {
 };
 
 export const ClientsList = ({ clients, renderBody }: Props) => {
+    if (!clients?.length) {
+        return <div>No clients</div>;
+    }
+
     return (
         <Accordion
             list={clients}
