@@ -153,6 +153,20 @@ server.post('/clients', (req, res) => {
     res.json(newClient);
 });
 
+server.post('/clients/:id/add_report', (req, res) => {
+    const clientId = req.params.id;
+    const client = router.db.get('clients').find({ id: clientId }).value();
+    const report = generateReport();
+
+    if (client) {
+        client.reports.push(report);
+        router.db.write();
+        res.status(201).json(report);
+    } else {
+        res.status(404).json({ error: 'Client not found' });
+    }
+});
+
 server.use(middlewares);
 server.use(router);
 

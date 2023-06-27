@@ -7,13 +7,13 @@ export type ReportData = {
 };
 
 export type Report = {
-    id: number;
+    id: string;
     title: string;
     data: ReportData[];
 };
 
 export type Client = {
-    id: number;
+    id: string;
     name: string;
     reports: Report[];
 };

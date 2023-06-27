@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-import { Client } from '../types';
+import { Client, Report } from '../types';
 
 const baseUrl = 'http://localhost:3004';
 
@@ -22,8 +22,8 @@ export const clientsApi = createApi({
                       ]
                     : [{ type: 'Clients', id: 'LIST' }],
         }),
-        addClient: builder.mutation<Client, Partial<Client>>({
-            query(body) {
+        addClient: builder.mutation<Client, Partial<Client> | void>({
+            query: (body = {}) => {
                 return {
                     url: `clients`,
                     method: 'POST',
@@ -32,7 +32,18 @@ export const clientsApi = createApi({
             },
             invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
         }),
+        addReportToClient: builder.mutation<Report, string>({
+            query: (clientId: string) => ({
+                url: `clients/${clientId}/add_report`,
+                method: 'POST',
+            }),
+            invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
+        }),
     }),
 });
 
-export const { useGetClientsQuery, useAddClientMutation } = clientsApi;
+export const {
+    useGetClientsQuery,
+    useAddClientMutation,
+    useAddReportToClientMutation,
+} = clientsApi;

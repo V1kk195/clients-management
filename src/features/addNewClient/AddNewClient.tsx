@@ -5,8 +5,14 @@ export const AddNewClient = () => {
     const [addClient, { isLoading }] = useAddClientMutation();
 
     const handleClick = async () => {
-        await addClient({ id: Math.random(), name: 'Samsung' });
+        await addClient();
     };
 
-    return <Button caption={'New Client'} onClick={handleClick} />;
+    return (
+        <Button
+            caption={'New Client'}
+            onClick={handleClick}
+            disabled={isLoading}
+        />
+    );
 };
