@@ -48,6 +48,18 @@ export const clientsApi = createApi({
             }),
             invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
         }),
+        deleteReport: builder.mutation<
+            void,
+            { clientId: string; reportId: string }
+        >({
+            query: ({ clientId, reportId }) => {
+                return {
+                    url: `clients/${clientId}/reports/${reportId}`,
+                    method: 'DELETE',
+                };
+            },
+            invalidatesTags: [{ type: 'Clients', id: 'LIST' }],
+        }),
         addDataToReport: builder.mutation<ReportData, string>({
             query: (reportId: string) => ({
                 url: `reports/${reportId}/add_data`,
@@ -64,4 +76,5 @@ export const {
     useAddReportToClientMutation,
     useAddDataToReportMutation,
     useDeleteClientMutation,
+    useDeleteReportMutation,
 } = clientsApi;

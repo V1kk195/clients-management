@@ -128,6 +128,8 @@ const server = jsonServer.create();
 const router = jsonServer.router(dbPath);
 
 const getClients = () => router.db.get('clients');
+const getClient = (id: string) =>
+    getClients().find((client) => client.id === id);
 
 server.use(
     cors({
@@ -216,6 +218,30 @@ server.post('/reports/:id/add_data', (req, res) => {
         res.status(201).json(data);
     } else {
         res.status(404).json({ error: 'Report not found' });
+    }
+});
+
+server.delete('/clients/:clientId/reports/:reportId', (req, res) => {
+    const clientId = req.params.clientId;
+    const reportId = req.params.reportId;
+
+    const client = getClient(clientId).value();
+    const reports = client.reports;
+
+    if (client) {
+        const reportIndex = reports.findIndex(
+            (report) => report.id === reportId
+        );
+
+        if (reportIndex !== -1) {
+            reports.splice(reportIndex, 1);
+
+            res.sendStatus(204);
+        } else {
+            res.status(404).json({ error: 'Report not found' });
+        }
+    } else {
+        res.status(404).json({ error: 'Client not found' });
     }
 });
 
