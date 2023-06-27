@@ -4,4 +4,16 @@
             margin-left: 0;
         }
     }
+
+    .customButtons {
+        position: absolute;
+        height: 36px;
+        right: 2px;
+        top: 2px;
+        z-index: 50;
+    }
+
+    :global(.accordion-header) {
+        position: relative;
+    }
 }

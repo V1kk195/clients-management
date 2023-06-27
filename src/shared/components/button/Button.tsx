@@ -1,13 +1,20 @@
 import cx from 'classnames';
-import React from 'react';
+import React, { ReactComponentElement } from 'react';
 
 type Props = {
-    caption: string;
+    caption?: string;
     classname?: string;
     onClick?: () => void;
+    icon?: ReactComponentElement<any>;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = ({ caption, classname, onClick, ...props }: Props) => {
+export const Button = ({
+    caption = '',
+    classname,
+    onClick,
+    icon,
+    ...props
+}: Props) => {
     return (
         <button
             type="button"
@@ -15,7 +22,10 @@ export const Button = ({ caption, classname, onClick, ...props }: Props) => {
             onClick={onClick}
             {...props}
         >
-            {caption}
+            <>
+                {icon ? icon : ''}
+                {caption}
+            </>
         </button>
     );
 };

@@ -6,7 +6,7 @@ import styles from './Accordion.module.scss';
 type Props<T> = {
     list: T[];
     getHeading: (item: T) => string | ReactNode;
-    buttons?: ReactNode;
+    renderHeaderButtons?: (item: T) => ReactNode;
     renderBody: (item: T) => ReactNode;
     id: string;
     classname?: string;
@@ -14,7 +14,7 @@ type Props<T> = {
 
 export const Accordion = <T extends { id: string | number }>({
     list,
-    buttons,
+    renderHeaderButtons,
     renderBody,
     getHeading,
     id,
@@ -45,7 +45,11 @@ export const Accordion = <T extends { id: string | number }>({
                                 {getHeading(item)}
                             </button>
 
-                            {buttons ? buttons : null}
+                            <div className={styles.customButtons}>
+                                {renderHeaderButtons
+                                    ? renderHeaderButtons(item)
+                                    : null}
+                            </div>
                         </h2>
 
                         <div
